@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ECO FLASH</title>
+    <link rel="icon" type="image" href="logo_white.png">
+    <link rel="stylesheet" href="index.css">
+    <script src="jquery.js"></script>
+</head>
+<body>
+    <div class="top-section">
+        <button class="tablink">
+            <img src="temperature.png" alt="temp" width="70" height="80">
+            <div class="inner-content"><span id="temp-value">0.0</span><span>&deg;C</span></div>
+            <p>Temperature</p>
+        </button>
+        <button class="tablink">
+            <img src="water-drop.png" alt="temp" width="70" height="80">
+            <div class="inner-content"><span id="moisture-value">00</span><span>&percnt;</span></div>
+            <p>Moisture</p>
+        </button>
+        <button class="tablink">
+            <img src="weighing.png" alt="temp" width="70" height="80">
+            <div class="inner-content"><span id="feed-value">0.0</span><span>kgs</span></div>
+            <p>Feeder</p>
+        </button>
+        <button class="tablink">
+            <img src="duration.png" alt="temp" width="70" height="80">
+            <div class="inner-content"><span id="time-value">00:00:00</span><span></span></div>
+            <p>
+                <label class="switch">
+                    <input type="checkbox" id="run-btn" onclick="toggleMachine()">
+                    <span class="slider round"></span>
+                </label>
+            </p>
+        </button>
+    </div>
+
+    <div id="Home" class="tabcontent">
+    <h3>Average Chamber Temperature</h3>
+    <p>Home is where the heart is..</p>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>
